@@ -8,11 +8,11 @@ variable1 = variable2;
 alert(`${variable1} , ${variable2}`);
 
 let object = new Object();
-object.string = "string";
-object.number = 1;
-object.boolean = true;
-object.undefined;
-object.null = null;
+object.String = "string";
+object.Number = 1;
+object.Boolean = true;
+object.Undefined;
+object.Null = null;
 
 console.log((isAdult = window.confirm("Are you over 18 years old?")));
 
