@@ -191,4 +191,4 @@ console.log(
   worker3.fullName + " " + "salary:" + " " + worker3.showSalaryWithExperience()
 );
 
-console.log(Worker.sorted([worker1, worker2, worker3], "asc"));
+console.log(Worker.sorted("asc"));
