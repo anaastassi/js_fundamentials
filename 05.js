@@ -113,11 +113,13 @@ refillMarker.print("Ready to write again");
 //5
 class Worker {
   #experience;
+  static workers = [];
   constructor(fullName, dayRate, workingDay) {
     this.fullName = fullName;
     this.dayRate = dayRate;
     this.workingDay = workingDay;
     this.#experience = 1.2;
+    Worker.workers.push(this);
   }
   showSalary() {
     return this.dayRate * this.workingDay;
@@ -132,9 +134,9 @@ class Worker {
   get showExp() {
     return this.#experience;
   }
-  static sorted(objects, order) {
+  static sorted(order) {
     let result = [];
-    objects.forEach((element) => {
+    Worker.workers.forEach((element) => {
       result.push([element.fullName, element.showSalaryWithExperience()]);
     });
     switch (order) {
