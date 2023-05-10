@@ -1,5 +1,5 @@
 //1
-let newWin = window.open("about:blank", "hello", "width=200,height=200");
+let newWin = window.open("about:blank", "hello", "width=300,height=300");
 
 function changeSize() {
   newWin.resizeTo(500, 500);
