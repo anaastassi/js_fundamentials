@@ -39,7 +39,7 @@ console.log(emailCheck('my_55mR-8ail@gmail.com'));
 
 //6
 function checkLogin(string){
-    let regexp = /^(?=.{2,10}$)[A-Za-z]+([A-Za-z0-9]*((?<=\d)\.)?[0-9]+)*$/;
+    let regexp = /^(?=.{2,10}$)[A-Za-z]+([A-Za-z0-9]*((?<=\d)\.)?((?<=\.)\d)?)*$/;
     let searchRegExp = /\d+(\.\d+)?/g;
     console.log(string.match(searchRegExp))
     return regexp.test(string);
