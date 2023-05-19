@@ -17,7 +17,6 @@ for (let i = 0; i < $divs.length; i++) {
 let allCheckboxes = $("input:checkbox");
 allCheckboxes.change(function () {
   let checkedCount = $(":checkbox:checked").length;
-  console.log(allCheckboxes);
   if (checkedCount > 2) {
     allCheckboxes.not(":checked").each(function () {
       $(this)[0].disabled = true;
